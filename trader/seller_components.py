@@ -196,7 +196,7 @@ class ReturnSeller(BaseSeller):
 class OpenDaySeller(BaseSeller):
     def __init__(self, strategy_name, delegate, parameters):
         BaseSeller.__init__(self, strategy_name, delegate, parameters)
-        print('开仓日指标止损策略', end=' ')
+        print('开仓日指标止损卖点模块', end=' ')
         self.opening_time_range = parameters.opening_time_range
         self.open_low_rate = parameters.open_low_rate
         self.open_vol_rate = parameters.open_vol_rate
